@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DjikstraTest {
+class DijkstraTest {
     private Dijkstra d = new Dijkstra();
     @Test
     public void _1_parentheses() {
