@@ -38,4 +38,19 @@ class DijkstraTest {
     public void _7_with_two_equals() {
         assertEquals(d.task("x=y=a*b/c+d"), "x'y'ab*c/d+==");
     }
+
+    @Test
+    public void _8_really_complex() {
+        assertEquals(d.task("x=y=z=((a+b)*c-d)/(e^f)^g"), "x'y'z'ab+c*d-ef^g^/===");
+    }
+
+    @Test
+    public void _9_really_complex() {
+        assertEquals(d.task("x=a*(b-c^d^e)+f/g"), "x'abcde^^-*fg/+=");
+    }
+
+    @Test
+    public void _10_really_complex() {
+        assertEquals(d.task("x=y=((a+b)*c)*((d^e)^f)"), "x'y'ab+c*de^f^*==");
+    }
 }
