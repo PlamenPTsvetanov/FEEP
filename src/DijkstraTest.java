@@ -53,4 +53,9 @@ class DijkstraTest {
     public void _10_really_complex() {
         assertEquals(d.task("x=y=((a+b)*c)*((d^e)^f)"), "x'y'ab+c*de^f^*==");
     }
+
+    @Test
+    public void _11_double_left() {
+        assertEquals(d.task("x=y=a*(b-c*(d-e))"), "x'y'abcde-*-*==");
+    }
 }

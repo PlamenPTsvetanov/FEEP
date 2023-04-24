@@ -28,7 +28,7 @@ public class Main {
 
         String input = scanner.nextLine();
         while (!input.equalsIgnoreCase("exit")){
-            dijkstra.task(input);
+            System.out.println(dijkstra.task(input));
             input = scanner.nextLine();
         }
     }

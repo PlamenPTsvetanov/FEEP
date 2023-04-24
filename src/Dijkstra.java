@@ -67,7 +67,7 @@ public class Dijkstra {
 
                 boolean toAppendNewSymbol = true;
                 while ((priorityIn <= priorityStack)) {
-                    if (stack.get(i).equals('(')) {
+                    if ((priorityIn == 0 && ch =='(') || stack.get(i).equals('(')) {
                         break;
                     }
                     output.append(stack.remove(i));
